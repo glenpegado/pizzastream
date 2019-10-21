@@ -1,0 +1,305 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	max-height: 1000000px;
+}
+
+body {
+	color: #565554;
+	background: #db593f;
+	font: 16px/1.2 "Avenir", "Arial", sans-serif;
+	min-width: 320px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.gm-style img {
+	max-width: none;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("../fonts/AvenirNextLTPro-Bold.woff") format("woff"), url("../fonts/AvenirNextLTPro-Bold.woff") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("../fonts/AvenirNextLTPro-Demi.woff") format("woff"), url("../fonts/AvenirNextLTPro-Demi.woff") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("../fonts/AvenirNext-Medium.woff") format("woff"), url("../fonts/AvenirNext-Medium.woff") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("../fonts/AvenirNextLTPro-It.woff") format("woff"), url("../fonts/AvenirNextLTPro-It.woff") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("../fonts/AvenirNextLTPro-Regular.woff") format("woff"), url("../fonts/AvenirNextLTPro-Regular.woff") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+}
+
+.container:before {
+	position: absolute;
+	left: -232px;
+	background: url(../images/pattern.png);
+	width: 237px;
+	top: 58px;
+	bottom: 40px;
+	content: "";
+}
+
+.container:after {
+	position: absolute;
+	right: -240px;
+	background: url(../images/pattern.png);
+	width: 237px;
+	top: 58px;
+	bottom: 40px;
+	content: "";
+}
+
+#header {
+	background: #f6f5ae;
+	padding: 24px 15px 34px;
+}
+
+.logo {
+	display: block;
+	width: 122px;
+	margin: 0 auto;
+}
+
+.logo a {
+	display: block;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.head {
+	padding: 52px 15px 42px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: 500;
+}
+
+.head h1 {
+	font-size: 40px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: 600;
+	margin: 0 0 22px;
+}
+
+.head p {
+	margin: 0;
+}
+
+.list-steps {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.list-steps li {
+	width: 33.333%;
+	border-left: 1px solid #d8d8d8;
+	padding: 0 0 93px;
+	position: relative;
+	overflow: hidden;
+}
+
+.list-steps li:first-child {
+	border: none;
+}
+
+.list-steps li.current .num {
+	background: #2e86ab;
+}
+
+.list-steps li.current .icon-holder {
+	background: #2e86ab;
+}
+
+.list-steps li.current .info {
+	color: #565554;
+}
+
+.list-steps li.completed .num {
+	background: rgba(46, 134, 171, .5);
+}
+
+.list-steps li.completed .icon-holder {
+	background: rgba(46, 134, 171, .5);
+}
+
+.list-steps .num {
+	display: block;
+	background: rgba(216, 216, 216, .5);
+	color: #fff;
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: 600;
+	padding: 8px 10px;
+	margin: 0 0 25px;
+}
+
+.list-steps p {
+	margin: 0 0 26px;
+	font-weight: 600;
+}
+
+.list-steps .icon-holder {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 15px;
+	width: 200px;
+	height: 200px;
+	border-radius: 4px;
+	margin: 0 auto 27px;
+	background: rgba(216, 216, 216, .5);
+}
+
+.list-steps .info {
+	display: block;
+	color: rgba(86, 85, 84, .5);
+}
+
+.info-area {
+	text-align: center;
+	padding: 32px 15px;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 500;
+}
+
+.info-area p {
+	margin: 0 0 6px;
+}
+
+.info-area time {
+	display: block;
+	font-size: 50px;
+	line-height: 54px;
+	font-weight: 600;
+}
+
+@media (max-width: 1023px) {
+	.list-steps li {
+		padding: 0 0 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	#header {
+		padding: 15px;
+	}
+
+	.logo {
+		width: 70px;
+	}
+
+	.head {
+		padding: 30px 15px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.head h1 {
+		font-size: 30px;
+		line-height: 36px;
+		margin: 0 0 15px;
+	}
+
+	.list-steps li {
+		width: 100%;
+		padding: 0 0 20px;
+	}
+
+	.list-steps .num {
+		margin: 0 0 15px;
+	}
+
+	.list-steps p {
+		margin: 0 0 15px;
+	}
+
+	.list-steps .icon-holder {
+		margin: 0 auto 15px;
+	}
+
+	.info-area {
+		padding: 15px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.info-area time {
+		font-size: 40px;
+		line-height: 44px;
+	}
+}
